@@ -1,0 +1,159 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bubbles.css' %}">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+        <a href="/ " class="btn btn-outline-primary my-1 mx-2">Go Back To Home </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+            </form>
+            <form class="form-inline my-2 my-lg-0">
+        </div>
+    </nav>
+
+    <div class="bubbles">
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+
+    <div class="bg-light">
+        <div class="container">
+            <div class="row justify justify-content-center">
+                <div class="col-11 col-md-8 col-lg-6 col-xl-5">
+                    <form class="" onsubmit="event.preventDefault()">
+                        <div class="card bg-dark">
+                            <div class="row mt-0">
+                                <div class="col-md-12 ">
+                                    <h4 class="">Contact Us</h4>
+                                    <p>Feel free to ask anything!</p>
+                                </div>
+                            </div>
+                            <div class="form-group row mb-3">
+                                <div class="col-md-12 mb-0">
+                                    <p class="mb-1">Name</p> <input id="name" type="text" placeholder="Enter your Name" name="name" class="form-control input-box rm-border">
+                                </div>
+                            </div>
+                            <div class="form-group row mb-3">
+                                <div class="col-md-12 mb-0">
+                                    <p class="mb-1">Email</p> <input id="e-mail" type="email" placeholder="Enter your email" name="email" class="form-control input-box rm-border">
+                                </div>
+                            </div>
+                            <div class="form-group row mb-3">
+                                <div class="col-md-12 mb-0">
+                                    <p class="mb-1">Mobile Number</p> <input id="phone" type="number" placeholder="Enter your Phone number" name="phone" class="form-control input-box rm-border">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-12 mb-2">
+                                    <p class="mb-1">Message</p> <textarea id="message" type="text" placeholder="Enter your message" name="desc" class="form-control input-box rm-border"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group row justify-content-center mb-0">
+                                <div class="col-md-12 px-3"> <input type="submit" value="Submit" class="btn btn-block btn-purple rm-border"> </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+</div>
+</body>
+
+    {% comment %} <form action="/contact" method="post">
+        {% csrf_token %}
+        <div class="mb-3 py-2">
+            <label for="exampleFormControlInput1" class="form-label"><b>Name</b></label>
+            <input type="name" class="form-control" id="exampleFormControlInput1" name = "name" placeholder="Enter your Name">
+        </div>
+        <div class="mb-3 py-2">
+            <label for="exampleFormControlInput1" class="form-label"><b>Email id</b></label>
+            <input type="email" class="form-control" id="exampleFormControlInpu2"name = "email" placeholder="Enter your Email">
+        </div>
+        <div class="mb-3 py-2">
+            <label for="exampleFormControlInput1" class="form-label"><b>Phone number</b></label>
+            <input type="number" class="form-control" id="exampleFormControlInput3"  name = "phone" placeholder="Enter your Phone number">
+        </div>
+        <div class="mb-3 py-2">
+            <label for="exampleFormControlTextarea1" class="form-label"><b>How can we help you ??</b></label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="7" name = "desc"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg ">Submit</button>
+    </form> {% endcomment %}
+{% comment %} </div> {% endcomment %}
+
+
+
+
+
+
+{% endblock content%}
