@@ -1,10 +1,8 @@
 # College Management System
 
-Website:
-http://cmscollegemanagementsystem.pythonanywhere.com/
-
 # Project Summary
-This is a Simple College Management System Developed for Educational Purpose using Python (Django).
+This is a Simple College Management System Developed using Python (Django).
+
 # Features of this Website
 # A. Admin Users Can
 1. See Overall Summary Charts of Students Performance, Staffs Performance, Add/Remove Courses, Add/Remove Subjects, Check/Reply Leave application of staffs/students, Check/reply on feedback bt staffs/students etc.
@@ -74,10 +72,13 @@ pip install virtualenv
 
 Clone or download this repository and open it in your editor of choice. In a terminal (mac/linux) or windows terminal, run the following command in the base directory of this project
 
-virtualenv env
+virtualenv venv
 
 That will create a new folder env in your project directory. Next activate it with this command on mac/linux:
-source env/bin/active
+source venv/bin/active
+
+For Windows command prompt:
+venv\Scripts\Activate
 
 Then install the project dependencies with
 pip install -r requirements.txt
