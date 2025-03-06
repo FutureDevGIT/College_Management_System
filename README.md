@@ -84,10 +84,8 @@ Then install the project dependencies with
 pip install -r requirements.txt
 
 Now you can run the project with this command
+
+**bash*
 python manage.py runserver
-
-
-Add Student Results From Staff Panel
-![image](https://user-images.githubusercontent.com/52338664/131296269-0066e46d-7581-4a81-8d72-40ac8c5a2bf3.png)
-
+**
 
